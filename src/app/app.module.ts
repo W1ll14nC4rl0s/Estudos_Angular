@@ -9,19 +9,27 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component'
+import { MatCardModule } from '@angular/material/card'
+import { MatListModule } from '@angular/material/list'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { HomeComponent } from './views/home/home.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule //importando um modulo
+    MatToolbarModule, //importando um modulo
+    MatListModule,
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
